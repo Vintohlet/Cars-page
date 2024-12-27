@@ -1,0 +1,282 @@
+.container{
+    margin: 0 auto;
+}
+.body{
+    font-family:  "Montserrat", serif;
+    font-style: normal;
+    font-size: 24px;
+}
+/* header styles */
+header{
+    border-bottom: 1px lightgray solid
+}
+
+dl, ol, ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+.header-container{
+    padding-top: 16px;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo{
+    font-family: "Kessel 205 W00 Bold";
+    font-size: 36px;
+}
+.header__list{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items:center;
+    column-gap: 18px;
+}
+.header__item{
+    font-weight: 500;
+}
+.header__link{
+    color: #101935;
+    text-decoration: none;
+}
+.header__item:hover{
+    color:#ff0800
+}
+
+/* catalog styles */
+.catalog-container{
+    padding-top: 120px;
+}
+.catalog__title{
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 36px;
+}
+.catalog__subtitle{
+    font-weight: 600;
+    font-size: 24px;
+}
+.catalog__cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 40px;
+}
+
+.sales{
+    max-width: 1400px;
+}
+.card{
+    margin-top: 30px;
+    box-shadow: 0 5px 10px 0 rgba(28, 24, 25, .15);
+}
+.card-img-top{
+    height: 360px;
+}
+.card-items{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+.card-button{
+    margin-top: 12px;
+    background-color: #101935;
+    color: white;
+    border-radius: 8%;
+    padding: 5px;
+}
+.card-button:hover{
+    background-color: #27396f;
+
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 99;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.modal-container{
+    width: 700px;
+    background-color:white;
+    overflow: hidden;
+    position: relative;
+  
+}
+.modal-link{
+    text-decoration: none;
+    color: white;
+}
+.modal-close{
+    width: 700px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+  
+    z-index: 11;
+}
+.modal-back{
+    margin-top: 16px;
+    margin-right: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 36px;
+    height: 36px;
+}
+.modal-arrows{
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+
+.modal-pics{
+    width: 400%;
+    display: flex;
+}
+.modal-pic{
+    flex-shrink: 0;
+    width: 700px;
+    height: 400px;
+}
+.modal-info{
+    padding-top: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+
+}
+.modal-description{
+    margin-top: 12px;
+}
+.modal-button{
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color:white;
+    background-color:#101935;
+    padding: 7px;
+    border-radius: 5%
+}
+.hide{
+    display: none;
+}
+/* selection styles */
+.selection__container{
+    padding-top: 150px;
+}
+.selection__title{
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 36px;
+}
+.selection__content{
+    padding-top: 48px;
+    display: flex;
+    align-items: center;
+}
+.selection__image{
+    width: 600px;
+}
+.selection__descripton{
+    font-weight: 500;
+    font-size: 24px;
+}
+.selection__button{
+    margin-top: 16px;
+    font-size: 24px;
+    font-weight: 500;
+    color:white;
+    background-color:#101935;
+    padding: 7px;
+    border-radius: 5%
+}
+.selection__link{
+    text-decoration: none;
+    color:white;
+}
+/* feedback styles */
+.feedback__container{
+    padding-top: 180px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-bottom: 150px;
+}
+.feedback__input{
+    box-shadow: 0 5px 10px 0 rgba(28, 24, 25, .15);
+    width: 600px;
+    padding: 60px;
+}
+.feedback__input-text{
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+}
+.feedback__block{
+    display: flex;
+    flex-direction: column;
+}
+.feedback__title{
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 36px;
+}
+.feedback__subtitle{
+    font-weight: 500;
+    font-size: 24px;
+}
+.feedback__text{
+   display: flex;
+    flex-direction: column;
+   text-align: left;
+}
+label{
+    font-weight: 500;
+    font-size: 24px;
+}
+/* footer styles */
+.footer__container{
+    background-color: rgb(210, 206, 206);
+}
+.footer__list{
+    margin-bottom: 0;
+    display: flex;
+    column-gap:20px;
+    color: rgb(132, 132, 132)
+}
+.footer__items{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-top: 24px;
+    padding-bottom: 46px;
+}
+.footer__logo{
+    color:black;
+    font-family: "Kessel 205 W00 Bold";
+    font-size: 24px;
+}
+/* error style */
+.error{
+    outline: 2px solid var(--red);
+}
+.error-text{
+    color: red;
+}
